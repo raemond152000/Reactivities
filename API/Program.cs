@@ -30,7 +30,7 @@ app.UseAuthorization();
 app.MapControllers();
 
 //creates database on start application instead of dependency injection from using services
-using var scope = app.Services.CreateScope(); // when werefinish with this particular method with this scope it would be destroyed and cleaned up from memory as soon as we execute this following code
+using var scope = app.Services.CreateScope(); // when were finish with this particular method with this scope it would be destroyed and cleaned up from memory as soon as we execute this following code
 var services = scope.ServiceProvider;
 
 try
